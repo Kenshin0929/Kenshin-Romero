@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(aboutb.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    flex: 1;
+    text-align: right;
+     
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #87CEEB;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.opening{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.opening h1{
+    font-size: 62px;
+}
+
+.opening p{
+    color: #bdb5b5;
+    margin: 10px 0 40px;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size:30px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 15px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #87CEEB;
+}
+
+
+@media(max-width:700px){
+    .header
+
+    .nav ul li a{
+        font-size: 11px;
+    }
+
+
+    .opening h1{
+        font-size: 20px;
+    }
+    .opening p{
+        font-size: 12px;
+    }
+
+    .footer ul li a {
+    font-size: 9px;
+    }
+
+    .footer p {
+        margin: 10px 0;
+        font-size:15px;
+    }    
+
+}
