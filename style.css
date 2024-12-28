@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(background1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    flex: 1;
+    text-align: right;
+     
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #87CEEB;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.welcome {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome h1{
+    font-size: 62px;
+    text-align: center;
+}
+.welcome p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+     
+.visit {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 25px;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.visit:hover {
+    color: #fff;
+    border: 1px solid 	#fff;
+    background: 	linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+    transition: 0,5s;
+}
+
+
+@media(max-width:700px){
+    .header
+
+    .nav ul li a{
+        font-size: 11px;
+    }
+
+
+    .welcome h1{
+        font-size: 20px;
+    }
+    .welcome p{
+        font-size: 12px;
+    }
+
+    .visit{
+        color: #fff;
+        border: 1px solid 	#fff;
+        margin-top: -20px;
+        font-size: 11px;
+        padding: 9px 15px;
+        background: transparent;
+
+    }
+}
+
+/*------page2---------*/
+
+.p2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.p2 h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.p2 p{
+    color: #777;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flight{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.p2 h3{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.flight:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*----pictures-----*/
+
+.pic{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pic h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.pic p{
+    color: #777;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    padding: 10px;
+}
+
+.pic h3{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+
+.row1{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.flight1 {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.flight1 img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.l1 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.l1:hover{
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .row1{
+        flex-direction: column;
+    }
+}
+
+
+/*----footer----*/
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size:30px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 15px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #87CEEB;
+}
+
+@media(max-width:700px){
+   
+    .footer ul li a {
+    font-size: 9px;
+    }
+
+    .footer p {
+        margin: 10px 0;
+        font-size:15px;
+    }    
+
+}
